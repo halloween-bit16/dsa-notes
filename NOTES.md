@@ -10,58 +10,59 @@ The **specification** of an ADT formally describes:
 
 ⚡ In essence, an ADT specification focuses on **what operations are performed and their effects**, rather than **how these operations are implemented**.
 
-## Differences between- Array and- Linked List
+# Differences between- Array and- Linked List
 
-# Definition
+### Definition
 -- Array: Collection of elements stored in contiguous memory locations.
 -- Linked List: Collection of nodes where each node contains data and a pointer to the next node (non-contiguous memory).
 
-# Memory Allocation
+### Memory Allocation
 -- Array: Static (fixed size at compile/run time).
 -- Linked List: Dynamic (size can grow or shrink at runtime).
 
-# Access Time
+### Access Time
 - Array: Direct/Random access using index in O(1).
 - Linked List: Sequential access, requires traversal in O(n).
 
-# Insertion/Deletion
+### Insertion/Deletion
 - Array: Costly (requires shifting elements) → O(n).
 - Linked List: Efficient (pointer changes only) → O(1) for beginning/end (if pointer known).
 
-# Memory Utilization
+### Memory Utilization
 - Array: May waste memory if oversized; overflow if undersized.
 - Linked List: No wastage (dynamic allocation), but needs extra memory for pointers.
 
-# Cache Friendliness
+### Cache Friendliness
 - Array: High (contiguous memory).
 - Linked List: Low (nodes scattered in memory).
 
-# Implementation Complexity
+### Implementation Complexity
 - Array: Simple to implement.
 - Linked List: More complex (requires pointer handling).
 
-# Overhead
+### Overhead
 - Array: No overhead (stores only data).
 - Linked List: Extra memory overhead for storing pointers.
 
-# Resizing
+### Resizing
 - Array: Difficult (requires new array + copying).
 - Linked List: Easy (add/remove nodes dynamically).
 
-# Insertion at End
+### Insertion at End
 - Array: O(1) if space available, else O(n) (resize needed).
 - Linked List: O(1) if tail maintained, else O(n).
 
-# Deletion at End
+### Deletion at End
 - Array: O(1) (just reduce size).
 - Linked List: O(n) unless tail + previous pointer maintained.
 
-# Suitable For
+### Suitable For
 - Array: Applications needing fast indexing and fixed-size data.
 - Linked List: Applications requiring frequent insertions/deletions and dynamic size.
 
-## 
-# Bubble Sort
+# Sorting
+
+### Bubble Sort
 - Repeatedly swaps adjacent elements if they are in the wrong order.
 - Largest element "bubbles" to the end in each pass.
 - Number of passes: n-1.
@@ -69,14 +70,14 @@ The **specification** of an ADT formally describes:
 - Worst case: O(n²).
 - In-place algorithm, but many swaps → inefficient.
 
-# Selection Sort
+### Selection Sort
 - Finds the minimum element in the unsorted part and places it at the beginning.
 - Always makes exactly n-1 swaps (efficient swap count).
 - Number of comparisons: O(n²) regardless of input order.
 - Best case = Worst case = O(n²).
 - Good when swaps are costly, bad when comparisons matter.
 
-# Insertion Sort
+### Insertion Sort
 - Builds the sorted portion one element at a time.
 - Takes the next element and inserts it into its correct position among the sorted elements.
 - Best case (already sorted): O(n).
@@ -84,7 +85,7 @@ The **specification** of an ADT formally describes:
 - Efficient for small arrays or partially sorted arrays.
 - Adaptive (performance improves with sorted input).
 
-# Quick Summary:
+### Quick Summary:
 - Bubble → many swaps, simple but slow.
 - Selection → fewer swaps, but always many comparisons.
 - Insertion → fast on nearly sorted/small data, adaptive.
