@@ -13,12 +13,12 @@ The **specification** of an ADT formally describes:
 # Differences between- Array and- Linked List
 
 ### Definition
--- Array: Collection of elements stored in contiguous memory locations.
--- Linked List: Collection of nodes where each node contains data and a pointer to the next node (non-contiguous memory).
+- Array: Collection of elements stored in contiguous memory locations.
+- Linked List: Collection of nodes where each node contains data and a pointer to the next node (non-contiguous memory).
 
 ### Memory Allocation
--- Array: Static (fixed size at compile/run time).
--- Linked List: Dynamic (size can grow or shrink at runtime).
+- Array: Static (fixed size at compile/run time).
+- Linked List: Dynamic (size can grow or shrink at runtime).
 
 ### Access Time
 - Array: Direct/Random access using index in O(1).
